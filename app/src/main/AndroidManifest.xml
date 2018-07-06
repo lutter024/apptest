@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zw.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:resizeableActivity="true">
+        <activity android:name=".MainActivity"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivityA"></activity>
+        <activity android:name=".MainActivityB">
+        </activity>
+        <activity android:name=".MainActivityC">
+        </activity>
+        <activity android:name=".TestActivity">
+        </activity>
+        <service android:name=".MyService">
+
+        </service>
+       <receiver android:name=".XF">
+           <intent-filter android:priority="1000">
+               <action android:name="action.x"></action>
+           </intent-filter>
+       </receiver>
+        <receiver android:name=".YF">
+            <intent-filter android:priority="800">
+                <action android:name="action.x"></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".ZF">
+            <intent-filter android:priority="600">
+                <action android:name="action.x"></action>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

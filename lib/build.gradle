@@ -1,0 +1,14 @@
+apply plugin: 'java'
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.google.auto.service:auto-service:1.0-rc2'
+    implementation 'com.squareup:javapoet:1.7.0'
+    //implementation project(':app')
+    //annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    compile project(':lib2')
+    //implementation (':app')
+}
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"
