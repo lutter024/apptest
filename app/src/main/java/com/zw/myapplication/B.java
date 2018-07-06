@@ -15,5 +15,6 @@ public class B extends AParent{
 
     public void fun2() {
         Log.d("dd","Programmer's fun2" + a);
+        //
     }
 }
